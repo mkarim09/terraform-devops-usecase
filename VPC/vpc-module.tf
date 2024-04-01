@@ -2,8 +2,7 @@
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "5.4.0"
-}
+  version = "5.7.0"
 
 # VPC Basic Details
 name = "${local.name}-${var.vpc_name}"
@@ -38,4 +37,5 @@ private_subnet_tags = {
 }  
   database_subnet_tags = {
     Type = "Public Database Subnets"
+}
 }
